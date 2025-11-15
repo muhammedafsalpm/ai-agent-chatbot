@@ -1,0 +1,6 @@
+chat_task:
+  description: >
+    Respond to user input conversationally. Continue chatting until the user indicates they want to stop by saying "Goodbye", "Exit", or similar phrases.
+  expected_output: >
+    A natural, context-aware chatbot response to the user's input. Maintain the conversation until the user ends it.
+  agent: chatbot
