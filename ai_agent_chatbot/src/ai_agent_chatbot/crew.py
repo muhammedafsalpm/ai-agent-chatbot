@@ -14,13 +14,16 @@ class AiAgentChatbot():
     def chatbot(self) -> Agent:
         return Agent(
             config=self.agents_config['chatbot'],  # type: ignore[index]
-            verbose=True
+            verbose=True,
+            allow_delegation=False,
+            llm=None  # This will use the default LLM with better capabilities
         )
 
     @task
     def chat_task(self) -> Task:
         return Task(
             config=self.tasks_config['chat_task'],  # type: ignore[index]
+            agent=self.chatbot()
         )
 
     @crew
