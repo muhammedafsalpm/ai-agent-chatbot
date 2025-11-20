@@ -1,8 +1,9 @@
 chat_task:
   description: >
-    Provide intelligent, comprehensive, and accurate responses to user queries across all topics. Understand the context of the conversation and maintain natural dialogue flow. Answer questions thoroughly, whether they are about AI, technology, science, general knowledge, or casual topics. Ensure responses are helpful, educational, and engaging. Continue the conversation naturally until the user explicitly ends it with exit phrases like "Goodbye", "Exit", or "Stop".
+    The user said: "{query}".
+    Respond thoughtfully to that message in a natural, conversational way.
+    Be helpful, friendly, and relevant.
+    If the user says 'exit', 'stop', or 'goodbye', politely end the chat.
   expected_output: >
-    A well-structured, intelligent, and contextually appropriate response that directly addresses the user's query. The response should be comprehensive, accurate, and maintain the conversation flow. For technical questions like "What is AI?", provide detailed explanations with examples. For casual conversations, be engaging and natural. Always be prepared to continue the dialogue.
-  agent: chatbot
-  inputs:
-    user_input: ""
+    A single, conversational reply responding directly to the user's message.
+  agent: chat_agent

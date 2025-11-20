@@ -4,3 +4,5 @@ __pycache__/
 .venv
 tests
 __init__.py
+
+chatbot.log
